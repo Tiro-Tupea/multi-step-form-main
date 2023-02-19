@@ -21,10 +21,6 @@ span{
 
 
 /* CLASSES */
-.step-2,.step-3,.step-4,.step-5{
-    display: none;
-}
-
 .flex{
     display: flex;
 }
@@ -42,7 +38,7 @@ span{
 .sidebar{
     width: 31vw;
     height: auto;
-    margin: 1rem;
+    margin: 1rem 2rem 1rem 1rem;
     background-image: url('/assets/images/bg-sidebar-desktop.svg');
     background-repeat: no-repeat;
 }   
@@ -55,35 +51,75 @@ span{
     li{
         color: $White;
         margin-bottom: 2rem;
-        list-style: none;   
+        list-style: none;
+           
     }
 }   
 
-
-
 .step-checkmark{
-    width: 3.5vw;
-    height: 3.5vh;
+    width: 2.5rem;
+    height: 2.5rem;
     text-align:center;
     margin-right: 1rem;
     border: 1px solid $White;
     border-radius: 50%;
     position: relative;
-    top: 4px;
+    top: 3px;
     span {
         color: $White;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: bold;
         position: relative;
-        top: 10px;
+        top: 8px;
     }
 }
 
 .step-info{
+    
     h4{
         margin-top: 0.2rem;
         }
 }
 
 
+/*-- step container --*/
+
+.step-2,.step-3,.step-4,.step-5{
+    display: none;
+}
+
+.step-container{
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    
+}
+
+.btns{
+    width: 40vh;
+    margin: 0 auto;
+    position: relative;
+    top: 28rem;
+
+    button{
+        width: 10vw;
+        height: 4vh;
+        border-radius: 0.5rem;
+        border-style: none;
+        color: $White;
+        font-size: 16px;
+        background-color: $Marineblue;
+    }
+
+    .nxt-btn{
+        margin-left: 15rem;
+    }
+
+    .prvs-btn {
+        display: none;
+        background-color: $White;
+        color: $Marineblue;
+        font-weight: 700;
+    }
+}
 
