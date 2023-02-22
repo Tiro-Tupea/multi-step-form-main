@@ -9,13 +9,19 @@
 }
 
 body{
+    height: 100vh;
     font-family: 'Ubuntu', sans-serif;
     background-color: $Magnolia;
 }
 
+h1{
+    color: $Marineblue;
+    font-size: 35px;
+}
+
 
 span{
-    font-size: 14px;
+    font-size: 16px;
     color: $Coolgray;
 }
 
@@ -26,8 +32,8 @@ span{
 }
 
 .main{
-    width: 80vw;
-    height: 51.5vh;
+    width: 75vw;
+    height: 75vh;
     margin: 10vh auto;
     background-color: $White;
     border-radius: 1rem;
@@ -95,15 +101,65 @@ span{
     
 }
 
-.btns{
-    width: 40vh;
-    margin: 0 auto;
-    position: relative;
-    top: 28rem;
+.steps {
+    height: 55vh;
+    margin: 4rem 3rem 0 3rem;
+    
+}
 
+.step-1{
+    h1{
+        margin-bottom: 0.5rem;
+    }
+
+    form{
+        margin-top: 2rem;
+    }
+    
+    label{
+        color: $Marineblue;
+    }
+
+    input::placeholder{
+        color: $Marineblue;
+        font-size: 16px;
+        font-weight: 700;
+        opacity: 0.5;
+    }
+   
+    input[type=text], input[type=email]{
+        display: block;
+        width: 35vw;
+        height: 7vh;
+        padding: 1rem;
+        margin-top: 0.5rem;
+        border: 1px solid $Lightgray;
+        border-radius: 7px;
+
+        &:focus{
+            outline-color: $Pastelblue;
+        }
+    }
+
+    .error-msg{
+        color: $Strawberryred;
+        font-weight: 700;
+        float: right;
+        position: relative;
+        right: 5rem;
+        opacity: 0;
+        display: none;
+    }
+
+}
+
+.btns{
+    width: 35vw;
+    margin-left: 3rem;
+   
     button{
-        width: 10vw;
-        height: 4vh;
+        width: 10.5vw;
+        height: 6vh;
         border-radius: 0.5rem;
         border-style: none;
         color: $White;
@@ -113,6 +169,10 @@ span{
 
     .nxt-btn{
         margin-left: 15rem;
+        &:hover{
+            cursor: pointer;
+            background-color: $Purplishblue;
+        }
     }
 
     .prvs-btn {
@@ -120,6 +180,8 @@ span{
         background-color: $White;
         color: $Marineblue;
         font-weight: 700;
+        opacity: 0;
+        
     }
 }
 
