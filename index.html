@@ -98,30 +98,45 @@
 
             <div class="subs-plan flex">
 
-              <div class="plans">
-                <h4>Arcade</h4>
-                <span>$9/mo</span> 
+              <div class="plans selected">
+                <img src="/assets/images/icon-arcade.svg" alt="icon">
+
+                <div class="subs-price">
+                  <h4>Arcade</h4>
+                <span>$9/mo</span>
+                </div>
+                 
               </div>
                 
               <div class="plans">
-                <h4>Advanced</h4>
+                <img src="/assets/images/icon-advanced.svg" alt="icon">
+
+                <div class="subs-price">
+                  <h4>Advanced</h4>
                 <span>$12/mo</span> 
+                </div>  
               </div>
 
               <div class="plans">
-                <h4>Pro</h4>
-                <span>$15/mo</span>
+                <img src="/assets/images/icon-pro.svg" alt="icon">
 
+                <div class="subs-price">
+                   <h4>Pro</h4>
+                <span>$15/mo</span>
+                </div>
               </div>
            
             </div>
-            
-            <span>Monthly</span>
-            <label class="switch">
+    
+            <div class="switch-container">
+              <span id="monthly">Monthly</span>
+              <label class="switch">
               <input type="checkbox">
               <span class="slider round"></span>
-            </label>
-            <span>Yearly</span> 
+              </label>
+              <span id="yearly">Yearly</span> 
+            </div>
+            
 
            <!-- Step 2 end -->
       </div>
@@ -135,23 +150,35 @@
             <div class="subs-package">
               
               <div class="packages">
-                <input type="checkbox">
-                <h4>Online service</h4>
-                <span> Access to multiplayer games</span>
+                <input id="pack-check" type="checkbox">
+
+                <div class="pack-title">
+                  <h4>Online service</h4>
+                  <span> Access to multiplayer games</span>
+                </div>
+                
                 <span class="price">+$1/mo</span> 
               </div>
 
               <div class="packages">
-                <input type="checkbox">
-                <h4>Larger storage</h4>
+                <input id="pack-check" type="checkbox">
+
+                <div class="pack-title">
+                  <h4>Larger storage</h4>
                 <span>Extra 1TB of cloud save</span> 
+                </div>
+                
                 <span class="price">+$2/mo</span> 
               </div>
 
               <div class="packages">
-                <input type="checkbox">
-                <h4>Customizable Profile</h4>
-                <span>Custom theme on your profile</span> 
+                <input id="pack-check" type="checkbox">
+
+                <div class="pack-title">
+                  <h4>Customizable Profile</h4>
+                  <span>Custom theme on your profile</span> 
+                </div>
+                
                 <span class="price">+$2/mo</span>
               </div>
 

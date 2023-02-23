@@ -17,6 +17,7 @@ body{
 h1{
     color: $Marineblue;
     font-size: 35px;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -90,7 +91,7 @@ span{
 
 /*-- step container --*/
 
-.step-2,.step-3,.step-4,.step-5{
+.step-1,.step-2,.step-3,.step-5{
     display: none;
 }
 
@@ -107,10 +108,8 @@ span{
     
 }
 
+/* one */
 .step-1{
-    h1{
-        margin-bottom: 0.5rem;
-    }
 
     form{
         margin-top: 2rem;
@@ -153,6 +152,174 @@ span{
 
 }
 
+/* twoo */
+
+.step-2{
+    .subs-plan{
+        margin-top: 3rem;
+    }
+
+    .plans {
+        width: 11vw;
+        height: 22vh;
+        margin-right: 0.7rem;
+        border: 2px solid $Lightgray;
+        border-radius: 10px;
+        
+        img{
+            margin: 1rem;
+        }
+
+        &:hover{
+            cursor: pointer;
+            border-color: $Purplishblue;
+        }
+
+    }
+
+    .selected{
+        background-color: $Magnolia;
+        border-color: $Purplishblue;
+    }
+
+    .subs-price {
+        position: relative;
+        top: 1.5rem;
+        margin: 1rem;
+
+        h4{
+            color: $Marineblue;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+    }
+
+    .switch-container {
+        width: 35vw;
+        height: 6vh;
+        text-align: center;
+        font-weight: 500;
+        background-color: $Magnolia;
+        margin-top: 2rem;
+        border-radius: 5px;
+
+        #monthly {
+            color: $Marineblue;
+        }
+
+         .switch {
+        position: relative;
+        display: inline-block;
+        margin: 1rem;
+        width: 40px;
+        height: 20px;
+      }
+      
+      .switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $Marineblue;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 12px;
+        width: 12px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      input:checked + .slider {
+        background-color: $Lightgray;
+      }
+      
+      input:focus + .slider {
+        box-shadow: 0 0 1px $Marineblue;
+      }
+      
+      input:checked + .slider:before {
+        -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        transform: translateX(20px);
+      }
+      
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+      
+      .slider.round:before {
+        border-radius: 50%;
+      }
+    }
+   
+}
+
+/* Three */
+
+.step-3{
+
+    .subs-package{
+        margin-top: 2rem;
+
+        .packages{
+            width: 35vw;
+            height:11vh;
+            margin-bottom: 1rem;
+            border-radius: 10px; 
+            border: 1.5px solid $Purplishblue;
+        }
+
+        .packages:hover{
+            cursor: pointer;
+        }
+
+        .price{
+            color: $Purplishblue;
+            float: right;
+            position: relative;
+            bottom: 1.5rem;
+            right: 1rem;
+        }
+
+        .pack-title{
+            width: 20vw;
+            margin-left: 4rem;
+        }
+
+        #pack-check{
+            width: 20px;
+            height: 20px;
+            position: relative;
+            left: 1.5rem;
+            top: 2rem;
+            transition: .1s ease-in;
+        }
+
+        //#pack-check:checked + .packages{
+            //background-color: $Magnolia;
+        //}
+    }
+
+
+}
+
 .btns{
     width: 35vw;
     margin-left: 3rem;
@@ -182,6 +349,9 @@ span{
         font-weight: 700;
         opacity: 0;
         
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
 
