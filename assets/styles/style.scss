@@ -91,7 +91,7 @@ span{
 
 /*-- step container --*/
 
-.step-1,.step-2,.step-3,.step-5{
+.step-5,.step-2,.step-3,.step-4{
     display: none;
 }
 
@@ -413,6 +413,31 @@ span{
     }
 }
 
+/* thk u */
+
+.step-5{
+    text-align: center;
+
+    .thk-you{
+        margin-top: 7rem;
+    }
+
+    img{
+        margin-bottom: 2rem;
+    }
+    
+    h1{
+        margin-bottom: 1rem;
+    }
+
+    p{
+        color: $Coolgray;
+        line-height: 25px;
+    }
+    
+}
+
+/* buttons */
 .btns{
     width: 35vw;
     margin-left: 3rem;
