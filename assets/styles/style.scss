@@ -320,6 +320,99 @@ span{
 
 }
 
+/* for */
+
+.step-4{
+
+    .summary{
+        width: 35vw;
+        height: 35vh;
+        margin-top: 2rem;
+
+        .Total{
+            position: relative;
+            top: 2rem;
+            left: 1.5rem;
+        }
+
+        #total{
+            float: right;
+            position: relative;
+            top: 2rem;
+            right: 1rem;
+            font-size: 20px;
+            font-weight: 700;
+            color: $Purplishblue;
+        }
+
+        .sum-price{
+            float: right;
+            
+        }
+
+    }
+
+    .resume-yr{
+        width: 90%;
+        height: 40%;
+        border-bottom: 1px solid $Lightgray;
+        margin: 1rem auto;
+        #res-yr, a{
+            position: relative;
+            top: 1rem;
+        }
+
+        #res-yr, #price-plan{
+            color: $Marineblue;
+            font-weight: 500;
+        }
+
+        #price-plan{
+            float: right;
+            position: relative;
+            top: 1.5rem;
+        }
+
+    }
+
+    .resume-services{
+        width: 90%;
+        height: 60%;
+        margin: 1rem auto;
+        
+        
+        #res-service, #res-storage{
+            position: relative;
+            top: 1rem;  
+        }
+
+        #res-storage{
+            position: relative;
+            top: 2rem;
+        }
+
+        #price-service, #price-storage{
+            float: right;
+            position: relative;
+            top: 1rem;
+        }
+
+        #price-storage{
+            position: relative;
+            top: 2rem;
+        }
+
+    }
+    
+
+    .resume{
+        height: 25vh;
+        border-radius: 10px;
+        background-color: $Magnolia;
+        
+    }
+}
+
 .btns{
     width: 35vw;
     margin-left: 3rem;
