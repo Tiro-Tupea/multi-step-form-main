@@ -48,9 +48,16 @@ span{
     margin: 1rem 2rem 1rem 1rem;
     background-image: url('/assets/images/bg-sidebar-desktop.svg');
     background-repeat: no-repeat;
+
+    .check{
+        background-color: $Magnolia;
+        span{
+            color: black;
+        }
+    }
 }   
 
-#checked-step {
+#checked-step{
     width: 15vw;
     height: auto;
     margin: 2.5rem 2rem auto;
@@ -465,7 +472,6 @@ span{
         background-color: $White;
         color: $Marineblue;
         font-weight: 700;
-        opacity: 0;
         
         &:hover{
             cursor: pointer;
