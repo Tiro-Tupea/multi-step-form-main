@@ -6,33 +6,40 @@ const stepUser  = document.querySelectorAll('.steps');
 const btnNxt    = document.querySelector('.nxt-btn');
 const btnPrvs   = document.querySelector('.prvs-btn');
 
+const inputForm = document.querySelector('#input-form');
+const userName  = document.querySelector('#name');
+const userEmail = document.querySelector('#email');
+const userPhone = document.querySelector('#phone');
+const errorMsg  = document.querySelector('.error-msg')
+
+let userVal;
 let step = 0;
-console.log(stepCheck)
-
-
+console.log(errorMsg.textContent);
+ 
 // next button event
 btnNxt.addEventListener('click', (e)=>{
-   
+    getUserInput();
     if(step < stepCheck.length){
-        step++;
+        nextStep();
     } else {
         return;
     }
-    nextStep();
+    
     console.log(step);
 });
 // previous buttton event
 btnPrvs.addEventListener('click', (e) =>{
     if(stepCheck.length >= step){
-        step--;
+        prvsStep();
     } else {
         return;
     }
-    prvsStep();
+    
     console.log(step);
 });
 
 function nextStep() {
+    step++;
     switch (step) {
         case 1:
             checkMark[0].classList.toggle('check');// remove the background color to the previous step sidebar
@@ -67,6 +74,7 @@ function nextStep() {
 
 
 function prvsStep() {
+    step--;
     switch (step) {
         case 0:
             checkMark[1].classList.toggle('check');
@@ -90,3 +98,25 @@ function prvsStep() {
         default:
     }
 }
+
+function getUserInput(val1, val2, val3){
+    // ref the user input values
+    val1 = userName.value; 
+    val2 = userEmail.value;
+    val3 = userPhone.value;
+
+    let res1,res2, res3; 
+    // inputs test 
+    res1 = /^[a-zA-Z]+$/.test(val1); // name 
+    res2 = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(val2);// email
+    res3 = /^[0-9]+$/.test(val3); // phone
+
+    if (res1 && res2 && res3){
+        console.log(val1);
+        console.log(val2);
+        console.log(val3);
+    } else {
+        console.log(false);
+    }
+}
+
