@@ -21,10 +21,8 @@ addOn.forEach(elem =>{
     });
 })
     
-
-let userVal;
 let step = 0;
-console.log();
+
 
 switchYeartly();
 
@@ -34,10 +32,9 @@ switchYeartly();
 btnNxt.addEventListener('click', (e)=>{
     e.preventDefault();
 
-    //getUserInput();
-    //getUserPlan();
-    nextStep();
-    console.log(step);
+    getUserInput();
+    getUserPlan();
+    console.log();
 });
 
 
@@ -205,5 +202,3 @@ function switchYeartly(){
         
     });
 }
-
-
