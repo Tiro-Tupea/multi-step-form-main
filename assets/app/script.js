@@ -122,7 +122,7 @@ function getUserInput(val1, val2, val3){
 
     let res1,res2, res3; 
     // inputs test 
-    res1 = /^[a-zA-Z]+$/.test(val1); // name 
+    res1 = /^[a-zA-Z].*[\s\.]*$/.test(val1); // names
     res2 = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(val2);// email
     res3 = /^[0-9]+$/.test(val3); // phone
 
