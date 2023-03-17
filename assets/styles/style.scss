@@ -153,10 +153,12 @@ span{
         float: right;
         position: relative;
         right: 5rem;
-        opacity: 0;
         display: none;
     }
 
+    .active{
+        display: block;
+    }
 }
 
 /* twoo */
@@ -191,13 +193,21 @@ span{
 
     .subs-price {
         position: relative;
-        top: 1.5rem;
+        top: 1rem;
         margin: 1rem;
 
         h4{
             color: $Marineblue;
             margin-bottom: 0.5rem;
             font-weight: 500;
+        }
+
+
+        .bonus{
+            display: none;
+            font-size: 12px;
+            color: $Purplishblue;
+            margin-top: 2px;
         }
     }
 
